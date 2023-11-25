@@ -1,0 +1,15 @@
+// Settings in here override those in "Default/Preferences.sublime-settings",
+// and are overridden in turn by syntax-specific settings.
+{
+	"word_wrap": true,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"show_encoding": true,
+    "show_line_endings": true,
+	"color_scheme": "Monokai.sublime-color-scheme",
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"default_dir": "%HOMEPATH%\\Documents"
+}

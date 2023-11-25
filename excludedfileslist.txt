@@ -1,0 +1,4 @@
+excludedfileslist.txt
+.git
+1.bat
+User.lnk

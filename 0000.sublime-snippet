@@ -1,0 +1,20 @@
+<snippet>
+	<content><![CDATA[
+echo "# $1" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/airjuice1/$1.git
+git push -u origin master
+
+git remote add origin https://github.com/airjuice1/$1.git
+git push -u origin master
+
+git fetch --all
+git reset --hard origin/master
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>giti</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
