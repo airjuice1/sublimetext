@@ -11,5 +11,7 @@
 	[
 		"Vintage",
 	],
-	"default_dir": "%HOMEPATH%\\Documents"
+	"default_dir": "%HOMEPATH%\\Documents",
+	"font_size": 13,
+	"theme": "Default.sublime-theme",
 }
