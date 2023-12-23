@@ -2,7 +2,7 @@
 	<content><![CDATA[
 echo '<pre>';
 print_r($1);
-// var_dump($1);
+var_dump($1);
 echo '</pre>';
 // continue;
 exit();
