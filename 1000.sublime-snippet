@@ -1,10 +1,9 @@
 <snippet>
 	<content><![CDATA[
 echo '<pre>';
-print_r($1);
 var_dump($1);
 echo '</pre>';
-// continue;
+$2// continue;
 exit();
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
