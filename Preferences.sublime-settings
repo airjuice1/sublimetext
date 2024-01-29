@@ -5,8 +5,7 @@
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"show_encoding": true,
-    "show_line_endings": true,
-	"color_scheme": "Monokai.sublime-color-scheme",
+    "show_line_endings": true,	
 	"ignored_packages":
 	[
 		"Vintage",
