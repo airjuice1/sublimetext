@@ -1,0 +1,44 @@
+[
+    // Label Controls
+    {
+        // "class": "label_control",        
+        // "font.size": 12,
+        // строка состояния
+    },
+    // Quick Panels
+    {
+        // "class": "quick_panel_label",
+        // "font.face": "var(font_face)",
+        // "font.size": 30,
+    },
+    // Sidebar Header
+    {
+        // "class": "sidebar_heading",
+        // "font.size": 18,
+    },
+    // Sidebar Label
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
+        // "font.size": 18,
+        "font.bold": true,
+    },
+    {    
+        // "class": "sidebar_label",
+        // "color": [0, 0, 0],
+        // "font.bold": false,
+        // "font.size": 18,
+        // "font.face": "Monaco",
+    },
+    // Tab Label
+    {
+        // "class": "tab_label",
+        // "font.size": 14,
+    },
+    // Tooltip Control
+    {
+        // "class": "tool_tip_label_control",
+        // "font.face": "var(font_face)",
+        // "font.size": 30,
+    },
+]

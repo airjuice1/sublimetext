@@ -1,6 +1,7 @@
 // Settings in here override those in "Default/Preferences.sublime-settings",
 // and are overridden in turn by syntax-specific settings.
 {
+	"ui_scale": 1.25,
 	"word_wrap": true,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
