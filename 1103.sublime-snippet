@@ -3,7 +3,7 @@
 Route::get('$1', [$2::class, 'index']);
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>llCreateROUTEget</tabTrigger>
+	<tabTrigger>llMakeRouteHttpGet</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<!-- <scope>source.python</scope> -->
 </snippet>
