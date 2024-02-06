@@ -21,6 +21,7 @@ Hello
 </snippet>
 EOT;
 
+$dir = getcwd() . DIRECTORY_SEPARATOR . 'snippets';
 $ext = '.sublime-snippet';
 $cmd = $argv[1] ?? null;
 $prm = $argv[2] ?? null;
@@ -33,8 +34,11 @@ $options = [
 	'js',
 	'react',
 	'mysql',
+	'git',
 ];
 $snippet_number = 1;
+
+(is_dir($dir)) || mkdir($dir);
 
 echo $spc;
 echo "==================\n";
@@ -52,14 +56,16 @@ switch ($cmd)
 {
 	case 0:
 
-		$files = array_filter(scandir(getcwd()), fn ($i) => strpos($i, $ext));
+		$files = array_filter(scandir($dir), fn ($i) => strpos($i, $ext));		
 
 		foreach ($files as $key => $value) 
 		{
-			if (crc32($template) == crc32(file_get_contents($value)))
+			$fullpath = $dir . DIRECTORY_SEPARATOR . $value;
+
+			if (crc32($template) == crc32(file_get_contents($fullpath)))
 			{
-				unlink($value);
-				echo "File " . $value . " deleted\n";
+				unlink($fullpath);
+				echo "File " . $fullpath . " deleted\n";
 			}
 		}
 		
@@ -72,11 +78,11 @@ switch ($cmd)
 		for ($i = 0; $i < $rng ; $i++) 
 		{
 			$files = array_values(array_map(fn ($i) => (int) filter_var(explode('.', $i)[0], FILTER_SANITIZE_NUMBER_INT)
-				, array_filter(array_filter(scandir(getcwd()), fn ($i) => strpos($i, $ext)), fn ($i) => strpos($i, $options[$prm-1]) !== false)));
+				, array_filter(array_filter(scandir($dir), fn ($i) => strpos($i, $ext)), fn ($i) => strpos($i, $options[$prm-1]) !== false)));
 
 			if ($files) $snippet_number = max($files) + 1;
 
-			$name = $options[$prm-1] . $snippet_number . $ext;
+			$name = $dir . DIRECTORY_SEPARATOR . $options[$prm-1] . $snippet_number . $ext;
 			createSnippet($name, $template);
 			echo "File " . $name . " created\n";
 		}
