@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-\App\Http\Middleware\\$1Middlware::class,
+\App\Http\Middleware\\$1Middleware::class,
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>llgetHTTPNAMESPACEmiddleware</tabTrigger>
