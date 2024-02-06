@@ -1,9 +1,9 @@
 <snippet>
 	<content><![CDATA[
-\App\Http\Middleware\$1Middlware::class,
+\App\Http\Middleware\\$1Middlware::class,
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>llgetNAMESPACEmiddleware</tabTrigger>
+	<tabTrigger>llgetHTTPNAMESPACEmiddleware</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<!-- <scope>source.python</scope> -->
 </snippet>
