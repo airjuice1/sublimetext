@@ -93,16 +93,3 @@ switch ($cmd)
 	default:
 	break;
 }
-
-
-
-
-
-
-// var_dump(max($files));
-// var_dump(min($files));
-
-// print_r($files);
-
-// // continue;
-// exit();
