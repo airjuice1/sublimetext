@@ -14,4 +14,5 @@
 	"default_dir": "%HOMEPATH%\\Documents",
 	"font_size": 13,
 	"theme": "Default.sublime-theme",
+	"draw_white_space": ["all"],
 }
