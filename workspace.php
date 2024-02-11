@@ -41,6 +41,8 @@ mode 1 - create project files without webapps directory
 mode 2 - delete sublime project files
 !!!!!!!mode 3 - erease all project files USE CAREFULY BLEAT'
 ====================
+
+
 HEREDOC;
 
 echo $help;
