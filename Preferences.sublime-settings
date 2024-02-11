@@ -6,7 +6,7 @@
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"show_encoding": true,
-    "show_line_endings": true,	
+    "show_line_endings": true,
 	"ignored_packages":
 	[
 		"Vintage",

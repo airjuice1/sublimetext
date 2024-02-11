@@ -3,3 +3,5 @@ excludedfileslist.txt
 1.bat
 User.lnk
 reset.bat
+index.php
+workspace.php
