@@ -42,8 +42,13 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/C/Users/Juice/Documents/webapps/sublimetext"
+	],
 	"file_history":
 	[
+		"/C/Users/Juice/Documents/webapps/sublimetext/Preferences.sublime-settings"
 	],
 	"find":
 	{
@@ -162,7 +167,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 150.0,
+	"side_bar_width": 437.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
