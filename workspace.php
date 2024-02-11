@@ -39,7 +39,7 @@ $help = <<<HEREDOC
 php {$scriptName} <project name> <mode>
 mode 1 - create project files without webapps directory
 mode 2 - delete sublime project files
-mode 3 - erease all project files
+!!!!!!!mode 3 - erease all project files USE CAREFULY BLEAT'
 ====================
 HEREDOC;
 
@@ -52,20 +52,20 @@ switch ($mode)
 	break;
 
 	case 2:
-		unlink($workspacesDir . DIRECTORY_SEPARATOR . $projectName . $extProject);
-		unlink($workspacesDir . DIRECTORY_SEPARATOR . $projectName . $extWorkspace);
+		$path = $webappsDir . DIRECTORY_SEPARATOR . $projectName;
+		unlink($path . DIRECTORY_SEPARATOR . $projectName . $extProject);
+		unlink($path . DIRECTORY_SEPARATOR . $projectName . $extWorkspace);
 	break;
 
 	case 3:
 		exec("taskkill /IM \"sublime_text.exe\" /F");
 		exec("timeout /t 5 /nobreak");
 		rrmdir($webappsDir . DIRECTORY_SEPARATOR . $projectName);
-		unlink($workspacesDir . DIRECTORY_SEPARATOR . $projectName . $extProject);
-		unlink($workspacesDir . DIRECTORY_SEPARATOR . $projectName . $extWorkspace);
 	break;
 	
 	default:
-		mkdir($webappsDir . DIRECTORY_SEPARATOR . $projectName);
-		file_put_contents($workspacesDir . DIRECTORY_SEPARATOR . $projectName . $extProject, $template1);
+		$path = $webappsDir . DIRECTORY_SEPARATOR . $projectName;
+		mkdir($path);
+		file_put_contents($path . DIRECTORY_SEPARATOR . $projectName . $extProject, $template1);
 	break;
 }
