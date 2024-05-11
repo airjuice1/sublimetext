@@ -1,9 +1,9 @@
 <snippet>
 	<content><![CDATA[
-php .\artisan make:view $1/index;
-php .\artisan make:view $1/create;
-php .\artisan make:view $1/show;
-php .\artisan make:view $1/edit;
+php artisan make:view $1/index;
+php artisan make:view $1/create;
+php artisan make:view $1/show;
+php artisan make:view $1/edit;
 
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
