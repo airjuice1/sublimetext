@@ -12,240 +12,104 @@
 	"buffers":
 	[
 		{
-			"contents": "git add . ; git commit -m'some changes' ; git push ; git status",
+			"file": "snippets/laravel16.sublime-snippet",
 			"settings":
 			{
-				"buffer_size": 63,
-				"line_ending": "Windows",
-				"name": "git add . ; git commit -m'some changes' ; git push"
-			},
-			"undo_stack":
-			[
-				[
-					1,
-					1,
-					"insert",
-					{
-						"characters": "gitp"
-					},
-					"BAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAACAAAAAAAAAAAAAAACAAAAAAAAAAMAAAAAAAAAAAAAAAMAAAAAAAAABAAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					2,
-					1,
-					"insert_completion",
-					{
-						"completion": "git add . ; git commit -m'some changes' ; git push ; git status",
-						"format": "snippet",
-						"keep_prefix": false,
-						"must_insert": false,
-						"trigger": "gitpipeline"
-					},
-					"AgAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAZ2l0cAAAAAAAAAAAPwAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAPC/"
-				]
-			]
-		},
-		{
-			"file": "snippets/laravel15.sublime-snippet",
-			"settings":
-			{
-				"buffer_size": 302,
+				"buffer_size": 377,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			},
 			"undo_stack":
 			[
 				[
-					5,
-					1,
-					"insert",
-					{
-						"characters": "dd"
-					},
-					"AwAAAB4AAAAAAAAAHwAAAAAAAAAAAAAAHwAAAAAAAAAfAAAAAAAAAAUAAABIZWxsbx8AAAAAAAAAIAAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAHgAAAAAAAAAjAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					6,
-					1,
-					"insert_snippet",
-					{
-						"contents": "($0)"
-					},
-					"AQAAACAAAAAAAAAAIgAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAIAAAAAAAAAAgAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					7,
-					1,
-					"insert",
-					{
-						"characters": "$1"
-					},
-					"AgAAACEAAAAAAAAAIgAAAAAAAAAAAAAAIgAAAAAAAAAjAAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAIQAAAAAAAAAhAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					10,
-					1,
-					"insert",
-					{
-						"characters": ";"
-					},
-					"AQAAACQAAAAAAAAAJQAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAJAAAAAAAAAAkAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					11,
+					12,
 					1,
 					"insert",
 					{
 						"characters": "\n"
 					},
-					"AQAAACUAAAAAAAAAJgAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAJQAAAAAAAAAlAAAAAAAAAAAAAAAAAPC/"
+					"AQAAAEgAAAAAAAAASQAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABIAAAAAAAAAEgAAAAAAAAAAAAAAACgdUA"
 				],
 				[
-					14,
+					13,
 					1,
-					"toggle_comment",
-					{
-						"block": false
-					},
-					"AgAAAIAAAAAAAAAAgAAAAAAAAAAFAAAAPCEtLSCeAAAAAAAAAJ4AAAAAAAAABAAAACAtLT4",
-					"AQAAAAAAAAABAAAApwAAAAAAAACnAAAAAAAAAP///////+9/"
-				],
-				[
-					18,
-					1,
-					"insert",
-					{
-						"characters": "ll"
-					},
-					"AwAAAIwAAAAAAAAAjQAAAAAAAAAAAAAAjQAAAAAAAACNAAAAAAAAAAUAAABoZWxsb40AAAAAAAAAjgAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAjAAAAAAAAACRAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					19,
-					2,
-					"left_delete",
+					"paste",
 					null,
-					"AgAAAI0AAAAAAAAAjQAAAAAAAAABAAAAbIwAAAAAAAAAjAAAAAAAAAABAAAAbA",
-					"AQAAAAAAAAABAAAAjgAAAAAAAACOAAAAAAAAAAAAAAAAAPC/"
+					"AQAAAEkAAAAAAAAAcwAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABJAAAAAAAAAEkAAAAAAAAAAAAAAAAA8L8"
 				],
 				[
-					20,
+					16,
 					1,
-					"insert",
-					{
-						"characters": "dd"
-					},
-					"AgAAAIwAAAAAAAAAjQAAAAAAAAAAAAAAjQAAAAAAAACOAAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAjAAAAAAAAACMAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					22,
-					1,
-					"duplicate_line",
+					"paste",
 					null,
-					"AQAAACYAAAAAAAAALgAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAJQAAAAAAAAAlAAAAAAAAAAAAAAAAgGJA"
+					"AgAAAFUAAAAAAAAAYAAAAAAAAAAAAAAAYAAAAAAAAABgAAAAAAAAAA4AAABtYWtlOm1pZ3JhdGlvbg",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABVAAAAAAAAAGMAAAAAAAAAAAAAAAAA8L8"
 				],
 				[
-					25,
+					23,
 					1,
-					"left_delete",
+					"right_delete",
 					null,
-					"AQAAACIAAAAAAAAAIgAAAAAAAAABAAAAMQ",
-					"AQAAAAAAAAABAAAAIwAAAAAAAAAjAAAAAAAAAAAAAAAAAPC/"
+					"AQAAAGEAAAAAAAAAYQAAAAAAAAAHAAAAY3JlYXRlXw",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABhAAAAAAAAAGgAAAAAAAAAAAAAAAAA8L8"
 				],
 				[
 					26,
 					1,
 					"insert",
 					{
-						"characters": "ew"
+						"characters": "Sededers"
 					},
-					"AgAAACIAAAAAAAAAIwAAAAAAAAAAAAAAIwAAAAAAAAAkAAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAIgAAAAAAAAAiAAAAAAAAAAAAAAAAAPC/"
+					"CQAAAGMAAAAAAAAAZAAAAAAAAAAAAAAAZAAAAAAAAABkAAAAAAAAAAYAAABfdGFibGVkAAAAAAAAAGUAAAAAAAAAAAAAAGUAAAAAAAAAZgAAAAAAAAAAAAAAZgAAAAAAAABnAAAAAAAAAAAAAABnAAAAAAAAAGgAAAAAAAAAAAAAAGgAAAAAAAAAaQAAAAAAAAAAAAAAaQAAAAAAAABqAAAAAAAAAAAAAABqAAAAAAAAAGsAAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABjAAAAAAAAAGkAAAAAAAAA////////738"
 				],
 				[
 					27,
-					2,
+					1,
 					"left_delete",
 					null,
-					"AgAAACMAAAAAAAAAIwAAAAAAAAABAAAAdyIAAAAAAAAAIgAAAAAAAAABAAAAZQ",
-					"AQAAAAAAAAABAAAAJAAAAAAAAAAkAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					28,
-					1,
-					"insert",
-					{
-						"characters": "request"
-					},
-					"BwAAACIAAAAAAAAAIwAAAAAAAAAAAAAAIwAAAAAAAAAkAAAAAAAAAAAAAAAkAAAAAAAAACUAAAAAAAAAAAAAACUAAAAAAAAAJgAAAAAAAAAAAAAAJgAAAAAAAAAnAAAAAAAAAAAAAAAnAAAAAAAAACgAAAAAAAAAAAAAACgAAAAAAAAAKQAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAIgAAAAAAAAAiAAAAAAAAAAAAAAAAAPC/"
+					"AQAAAGoAAAAAAAAAagAAAAAAAAABAAAAcw",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABrAAAAAAAAAGsAAAAAAAAAAAAAAAAA8L8"
 				],
 				[
 					29,
-					1,
-					"insert",
-					{
-						"characters": "->all"
-					},
-					"BQAAACkAAAAAAAAAKgAAAAAAAAAAAAAAKgAAAAAAAAArAAAAAAAAAAAAAAArAAAAAAAAACwAAAAAAAAAAAAAACwAAAAAAAAALQAAAAAAAAAAAAAALQAAAAAAAAAuAAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAKQAAAAAAAAApAAAAAAAAAAAAAAAAAPC/"
+					2,
+					"left_delete",
+					null,
+					"AgAAAGYAAAAAAAAAZgAAAAAAAAABAAAAZWUAAAAAAAAAZQAAAAAAAAABAAAAZA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABnAAAAAAAAAGcAAAAAAAAAAAAAAAAA8L8"
 				],
 				[
 					30,
 					1,
-					"insert_snippet",
+					"insert",
 					{
-						"contents": "($0)"
+						"characters": "e"
 					},
-					"AQAAAC4AAAAAAAAAMAAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAALgAAAAAAAAAuAAAAAAAAAAAAAAAAAPC/"
+					"AQAAAGUAAAAAAAAAZgAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABlAAAAAAAAAGUAAAAAAAAAAAAAAAAA8L8"
 				],
 				[
-					35,
+					32,
 					1,
 					"insert",
 					{
-						"characters": "//"
+						"characters": "\n"
 					},
-					"AgAAADMAAAAAAAAANAAAAAAAAAAAAAAANAAAAAAAAAA1AAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAMwAAAAAAAAAzAAAAAAAAAAAAAAAAAAAA"
+					"AQAAAGkAAAAAAAAAagAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABpAAAAAAAAAGkAAAAAAAAA////////738"
 				],
 				[
-					36,
+					5,
 					1,
 					"insert",
 					{
-						"characters": " a"
+						"characters": "_s"
 					},
-					"AgAAADUAAAAAAAAANgAAAAAAAAAAAAAANgAAAAAAAAA3AAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAANQAAAAAAAAA1AAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					37,
-					1,
-					"left_delete",
-					null,
-					"AQAAADYAAAAAAAAANgAAAAAAAAABAAAAYQ",
-					"AQAAAAAAAAABAAAANwAAAAAAAAA3AAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					39,
-					1,
-					"insert",
-					{
-						"characters": "\\"
-					},
-					"AQAAACEAAAAAAAAAIgAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAIQAAAAAAAAAhAAAAAAAAAAAAAAAAADlA"
+					"AwAAAGMAAAAAAAAAZAAAAAAAAAAAAAAAZAAAAAAAAABkAAAAAAAAAAEAAABTZAAAAAAAAABlAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAYwAAAAAAAABkAAAAAAAAAAAAAAAAAPC/"
 				]
 			]
 		}
@@ -291,6 +155,9 @@
 	],
 	"file_history":
 	[
+		"/C/Users/Juice/Documents/webapps/sublimetext/snippets/laravel17.sublime-snippet",
+		"/C/Users/Juice/Documents/webapps/sublimetext/snippets/laravel16.sublime-snippet",
+		"/C/Users/Juice/Documents/webapps/sublimetext/snippets/laravel15.sublime-snippet",
 		"/C/Users/Juice/Documents/webapps/sublimetext/snippets/laravel13.sublime-snippet",
 		"/C/Users/Juice/Documents/webapps/sublimetext/index.php",
 		"/C/Users/Juice/Documents/webapps/sublimetext/snippets/laravel7.sublime-snippet",
@@ -301,7 +168,7 @@
 	],
 	"find":
 	{
-		"height": 39.0
+		"height": 27.0
 	},
 	"find_in_files":
 	{
@@ -347,49 +214,20 @@
 			[
 				{
 					"buffer": 0,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 63,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								63
-							]
-						],
-						"settings":
-						{
-							"auto_name": "git add . ; git commit -m'some changes' ; git push",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"stack_multiselect": false,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "snippets/laravel15.sublime-snippet",
+					"file": "snippets/laravel16.sublime-snippet",
 					"selected": true,
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 302,
+						"buffer_size": 377,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								34,
-								34
+								101,
+								101
 							]
 						],
 						"settings":

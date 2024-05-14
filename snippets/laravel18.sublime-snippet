@@ -1,11 +1,10 @@
 <snippet>
 	<content><![CDATA[
-php artisan make:migration create_$1_table
-php artisan make:seeder $1_seeder
-
+use Illuminate\Support\Facades\DB;
+DB::table('$1')->insert();
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>llArtisanMakeMigrationCreateTable</tabTrigger>
+	<tabTrigger>llArtisanDBInsertToTable</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<!-- <scope>source.python</scope> -->
 </snippet>
