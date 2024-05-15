@@ -28,7 +28,7 @@ $prm = $argv[2] ?? null;
 $rng = $argv[3] ?? 1;
 $msg = "\n\n\n\n\n\nWrong parametrs\n\n\n\n\n\n";
 $spc = "\n\n\n\n\n\n\n\n\n\n\n\n";
-$options = [		
+$options = [
 	'laravel',
 	'php',
 	'js',
@@ -52,11 +52,11 @@ echo "==================\n";
 
 !($cmd < 0 || $cmd > 1) || exit($msg);
 
-switch ($cmd) 
+switch ($cmd)
 {
 	case 0:
 
-		$files = array_filter(scandir($dir), fn ($i) => strpos($i, $ext));		
+		$files = array_filter(scandir($dir), fn ($i) => strpos($i, $ext));
 
 		foreach ($files as $key => $value) 
 		{
@@ -78,7 +78,7 @@ switch ($cmd)
 		for ($i = 0; $i < $rng ; $i++) 
 		{
 			$files = array_values(array_map(fn ($i) => (int) filter_var(explode('.', $i)[0], FILTER_SANITIZE_NUMBER_INT)
-				, array_filter(array_filter(scandir($dir), fn ($i) => strpos($i, $ext)), fn ($i) => strpos($i, $options[$prm-1]) !== false)));
+				, array_filter(array_filter(scandir($dir), fn ($i) => strpos($i, $ext)), fn ($i) => strpos($i, $options[$prm-1])!== false)));
 
 			if ($files) $snippet_number = max($files) + 1;
 
