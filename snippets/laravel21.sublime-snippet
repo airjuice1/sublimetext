@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+
+DB_CONNECTION=mysql
+DB_HOST=airjuice.ru
+DB_PORT=3306
+# DB_DATABASE=app1
+DB_DATABASE=
+DB_USERNAME=juice
+DB_PASSWORD=
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>llEnvDatabaseSection</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
