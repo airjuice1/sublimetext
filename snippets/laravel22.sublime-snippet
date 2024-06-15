@@ -1,9 +1,15 @@
 <snippet>
 	<content><![CDATA[
-php artisan make:model $1 --seed --migration --factory
+php artisan migrate
+
+php artisan migrate:fresh
+
+php artisan migrate:fresh --seed
+
+
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>llArtisanMakeModel</tabTrigger>
+	<tabTrigger>llArtisanMigrate</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<!-- <scope>source.python</scope> -->
 </snippet>
