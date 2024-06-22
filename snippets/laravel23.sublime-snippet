@@ -1,0 +1,75 @@
+<snippet>
+	<content><![CDATA[
+// \$table->string('');
+// \$table->decimal('');
+// \$table->date('');
+// \$table->id();
+// \$table->boolean('');
+// \$table->foreignId(::class)->constrained();
+// \$table->foreignId(::class)->constrained()->onUpdate('cascade')->onDelete('cascade');
+// \$table->foreignIdFor(::class)->constrained();
+// \$table->foreignIdFor(::class)->constrained()->onUpdate('cascade')->onDelete('cascade');
+// \$table->foreignUlid(::class)->constrained();
+// \$table->foreignUlid(::class)->constrained()->onUpdate('cascade')->onDelete('cascade');
+// \$table->foreignUuid(::class)->constrained();
+// \$table->foreignUuid(::class)->constrained()->onUpdate('cascade')->onDelete('cascade');
+// \$table->dateTime('');
+// \$table->text('');
+// \$table->softDeletes('');
+// \$table->timestamps('');
+// \$table->tinyInteger('');
+// \$table->unsignedBigInteger('');
+// \$table->unsignedInteger('');
+// \$table->unsignedTinyInteger('');
+]]></content>
+
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>llMigrateCreateCol</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+
+<!-- 	$table->increments();
+	$table->bigIncrements();
+	$table->bigInteger();
+	$table->binary();
+	$table->char();
+	$table->dateTimeTz();
+	$table->double();
+	$table->enum();
+	$table->float();
+	$table->geography();
+	$table->geometry();
+	$table->integer();
+	$table->ipAddress();
+	$table->json();
+	$table->jsonb();
+	$table->longText();
+	$table->macAddress();
+	$table->mediumIncrements();
+	$table->mediumInteger();
+	$table->mediumText();
+	$table->morphs();
+	$table->nullableMorphs();
+	$table->nullableTimestamps();
+	$table->nullableUlidMorphs();
+	$table->nullableUuidMorphs();
+	$table->rememberToken();
+	$table->set();
+	$table->smallIncrements();
+	$table->smallInteger();
+	$table->softDeletesTz();
+	$table->timeTz();
+	$table->time();
+	$table->timestampTz();
+	$table->timestamp();
+	$table->timestampsTz();
+	$table->tinyIncrements();
+	$table->tinyText();
+	$table->unsignedMediumInteger();
+	$table->unsignedSmallInteger();
+	$table->ulidMorphs();
+	$table->uuidMorphs();
+	$table->ulid();
+	$table->uuid();
+	$table->year(); -->
+</snippet>
