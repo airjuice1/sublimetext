@@ -6,13 +6,13 @@
 // \$table->id();
 // \$table->boolean('');
 // \$table->foreignIdFor(::class)->constrained();
-// \$table->foreignIdFor(::class)->constrained()->cascadeOnUpdate()->restrictOnDelete();
+// \$table->foreignIdFor(::class)->constrained()->onUpdate('cascade')->onDelete('restrict');
 // \$table->foreignId(::class)->constrained();
-// \$table->foreignId(::class)->constrained()->cascadeOnUpdate()->restrictOnDelete();
+// \$table->foreignId(::class)->constrained()->onUpdate('cascade')->onDelete('restrict');
 // \$table->foreignUlid(::class)->constrained();
-// \$table->foreignUlid(::class)->constrained()->cascadeOnUpdate()->restrictOnDelete();
+// \$table->foreignUlid(::class)->constrained()->onUpdate('cascade')->onDelete('restrict');
 // \$table->foreignUuid(::class)->constrained();
-// \$table->foreignUuid(::class)->constrained()->cascadeOnUpdate()->restrictOnDelete();
+// \$table->foreignUuid(::class)->constrained()->onUpdate('cascade')->onDelete('restrict');
 // \$table->dateTime('');
 // \$table->text('');
 // \$table->softDeletes('');
