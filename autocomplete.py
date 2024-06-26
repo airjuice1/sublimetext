@@ -41,6 +41,6 @@ class SimpleLaravelAutoCompleteCommand(sublime_plugin.TextCommand):
 		if index == -1:
 			return
 
-		selected_item = 'use ' + self.elements[index] + ';'
-		sublime.set_clipboard('use ' + selected_item + ';')
+		selected_item = 'use ' + self.elements[index] + ';\n'
+		sublime.set_clipboard('use ' + selected_item + ';\n')
 		self.view.run_command("insert_snippet", {"contents": selected_item})
