@@ -47,6 +47,7 @@ foreach ($options as $key => $value) echo $key + 1 . " " . $value . "\n";
 echo "==================\n";
 echo "example\n";
 echo "php .\index.php 1 1 - create 1 snippet for laravel with max number in over filename\n";
+echo "php .\index.php 6 1 - create 1 snippet for git with max number in over filename\n";
 echo "php .\index.php 1 1 10 - create 10 snippets for laravel start from max number in over filename\n";
 echo "==================\n";
 
