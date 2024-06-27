@@ -1,5 +1,6 @@
 del /S "%APPDATA%\\Sublime Text\\Packages\\User\\*.sublime-snippet"
 del /S "%APPDATA%\\Sublime Text\\Packages\\User\\*.py"
+del /S "%APPDATA%\\Sublime Text\\Packages\\User\\*.txt"
 del /S "%APPDATA%\\Sublime Text\\Packages\\User\\*.sublime*"
 rem timeout /t 1 /nobreak
 xcopy .\*.* "%APPDATA%\Sublime Text\Packages\User" /R /I /S /Y /EXCLUDE:excludedfileslist.txt

@@ -1,4 +1,4 @@
 [
 	{ "keys": [ "ctrl+shift+o" ], "command": "simple_laravel_auto_complete" },
-	{ "keys": [ "ctrl+shift+o+y" ], "command": "namespaces" },
+	{ "keys": [ "ctrl+shift+y" ], "command": "default_laravel_classes" },
 ]

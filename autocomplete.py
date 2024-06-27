@@ -13,12 +13,16 @@ def _read_files(pathes, project_path):
 				if file in except_files:
 					continue
 
+				if not file.endswith('.php'):
+					continue
+
 				file_path = os.path.join(project_path, root, file)
 				with open(file_path, encoding='utf-8') as f:
 					code = _extract_class(f.read())
 					if code:
 						result[0].append(code[0])
 						result[1].append(code[1])
+						# result[1].append(file_path)
 	return result
 
 def _extract_class(text):
@@ -41,14 +45,76 @@ def _find_postion_in_text(text):
 
 	return result
 
-class InsertTextAtPositionCommand(sublime_plugin.TextCommand):
-	def run(self, edit, position, text):
-		self.view.insert(edit, position, text)
-
 def _check_class(text, class_name):
 	if text.find(class_name) == -1:
 		return False
 	return True
+
+class DefaultLaravelClassesCommand(sublime_plugin.TextCommand):
+	def run(self, edit):
+		self.namespaces = []
+		self.classes = []
+
+		file_contained_namespaces = os.path.join(sublime.packages_path(), 'User', 'laravelnamespaces.txt')
+		file_contained_class_names = os.path.join(sublime.packages_path(), 'User', 'laravelclasses.txt')
+
+		if not os.path.isfile(file_contained_namespaces) or not os.path.isfile(file_contained_class_names):
+			print('file not found')
+			return
+		
+		with open(file_contained_namespaces, 'r') as f:
+			lines = f.readlines()
+		for l in lines:
+			self.namespaces.append(l)
+
+		with open(file_contained_class_names, 'r') as f:
+			lines = f.readlines()
+		for l in lines:
+			self.classes.append(l)
+
+		self.view.window().show_quick_panel(self.namespaces, self.on_done)
+
+	def on_done(self, index):
+		if index == -1:
+			return
+
+		text = self.view.substr(sublime.Region(0, self.view.size()))
+
+		position = _find_postion_in_text(text)
+		selected_item = 'use ' + self.namespaces[index].strip() + ';\n'
+		selected_class = self.classes[index]
+
+		if position:
+			if not _check_class(text, 'use ' + self.namespaces[index].strip() + ';'):
+				self.view.run_command("insert_text_at_position", {"position": position + 2, "text": selected_item})
+			self.view.run_command("insert_snippet", {"contents": selected_class})
+		else:
+			print('class not found')
+
+
+
+class MakeLaravelClassesFileCommand(sublime_plugin.TextCommand):
+	def run(self, edit):
+		prj_path = sublime.active_window().folders()[0]
+		ven_path = os.path.join(prj_path, "vendor\\laravel\\framework\\src\\Illuminate")
+		self.elements = _read_files([ven_path], prj_path)
+
+		file_contained_namespaces = os.path.join(sublime.packages_path(), 'User', 'laravelnamespaces.txt')
+		file_contained_class_names = os.path.join(sublime.packages_path(), 'User', 'laravelclasses.txt')
+
+		fcn = open(file_contained_namespaces, 'a')
+		fcn.truncate(0)
+		fccn = open(file_contained_class_names, 'a')
+		fccn.truncate(0)
+
+		for namespace in self.elements[0]:
+			fcn.write(namespace + "\n")
+		for class_name in self.elements[1]:
+			fccn.write(class_name + "\n")
+
+class InsertTextAtPositionCommand(sublime_plugin.TextCommand):
+	def run(self, edit, position, text):
+		self.view.insert(edit, position, text)
 
 class SimpleLaravelAutoCompleteCommand(sublime_plugin.TextCommand):
 	def run(self, edit):
