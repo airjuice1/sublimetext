@@ -1,6 +1,9 @@
 <snippet>
 	<content><![CDATA[
-<# rm -r -fo .\app1\ #>
+<#
+	cd ([Environment]::GetFolderPath("MyDocuments")); cd webapps
+	rm -r -fo .\app1\
+#>
 git restore .
 git clean -fd
 
