@@ -1,5 +1,6 @@
 <snippet>
 	<content><![CDATA[
+<# rm -r -fo .\app1\ #>
 git restore .
 git clean -fd
 
