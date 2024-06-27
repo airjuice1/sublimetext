@@ -45,6 +45,11 @@ class InsertTextAtPositionCommand(sublime_plugin.TextCommand):
 	def run(self, edit, position, text):
 		self.view.insert(edit, position, text)
 
+def _check_class(text, class_name):
+	if text.find(class_name) == -1:
+		return False
+	return True
+
 class SimpleLaravelAutoCompleteCommand(sublime_plugin.TextCommand):
 	def run(self, edit):
 		prj_path = sublime.active_window().folders()[0]
@@ -65,8 +70,10 @@ class SimpleLaravelAutoCompleteCommand(sublime_plugin.TextCommand):
 		selected_class = self.elements[1][index]
 		# sublime.set_clipboard('use ' + selected_item + ';\n')
 
+
 		if position:
-			self.view.run_command("insert_classname_at_position", {"text": selected_class})
-			self.view.run_command("insert_text_at_position", {"position": position + 2, "text": selected_item})
+			if not _check_class(text, 'use ' + self.elements[0][index] + ';'):
+				self.view.run_command("insert_text_at_position", {"position": position + 2, "text": selected_item})
+			self.view.run_command("insert_snippet", {"contents": selected_class})
 		else:
 			print('class not found')
