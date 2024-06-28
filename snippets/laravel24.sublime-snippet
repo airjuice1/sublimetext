@@ -1,21 +1,11 @@
 <snippet>
 	<content><![CDATA[
-php artisan key:generate
 
-php artisan migrate
-
-php artisan migrate:fresh
-
-php artisan migrate:fresh --seed
-
-php artisan migrate:fresh --seed; php artisan key:generate;
-
-
-
+public $timestamps = false;
 
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>llArtisanMigrate</tabTrigger>
+	<tabTrigger>lltimestamps</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<!-- <scope>source.python</scope> -->
 </snippet>
