@@ -1,11 +1,16 @@
 <snippet>
 	<content><![CDATA[
 <#
-	cd ([Environment]::GetFolderPath("MyDocuments")); cd webapps
-	rm -r -fo .\app1\
+
+
+
+	cd ([Environment]::GetFolderPath("MyDocuments") + '\webapps'); rm -r -fo .\app1\
+
+
+
+
 #>
-git restore .
-git clean -fd
+git restore . ; git clean -fd
 
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
